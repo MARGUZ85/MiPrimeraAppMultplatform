@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPrimeraAppMultplatform</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="ComposeTarget" style="width: 100%; height: 100%; display: flex; flex-direction: column;"></div>
+<script type="text/javascript">
+    window.onerror = function(message, source, lineno, colno, error) {
+        document.body.innerHTML += '<div style="color:red; font-size:20px; z-index:9999; position:absolute;">' + message + '<br>' + (error ? error.stack : '') + '</div>';
+    };
+</script>
+<script type="module" src="composeApp.js"></script>
+</body>
+</html>
